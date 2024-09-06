@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kshitij Gehlot | portfolio</title>
+    <title>Rd Seto | portfolio</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet" />
     <link href="css/animate.min.css" rel="stylesheet" />
     <link href="css/aos.css" rel="stylesheet" />
+    <link href="js/script.js" rel="stylesheet"  />
     <!-- main style -->
     <link href="css/style.css" rel="stylesheet" />
     <!-- vercel-insights -->
@@ -62,29 +63,38 @@
     </header>
     <!-- ./header -->
 
+    <script src="js/script.js"></script> <!-- Link to your JavaScript file -->
+
     <!-- home -->
-    <div class="section" id="home" data-stellar-background-ratio="0.5">
-      <div class="container">
+    <div class="section relative" id="home">
+      <!-- Background Shapes -->
+      <div class="absolute inset-0 justify-center">
+        <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+        <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+        <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+      </div>
+
+      <!-- Content Section -->
+      <div class="container relative z-10">
         <div class="disply-table">
           <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
-            <h4>Kshitij Gehlot</h4>
-            <h1>Software Developer</h1>
+            <h4>
+              <span class="typewriter" id="typewriter-text"></span>
+            </h4>
+            <h1 id="job-title">Front End Developer</h1>
             <div id="herobtn">
-            <div class="resumediv" id="resumediv">
-              <a class="resume" id="resume" href="Kshitij's Resume.pdf" target="_blank">View Resume</a>
+              <div class="resumediv" id="resumediv">
+                <a class="resume" id="resume" href="Seto Resume.pdf" target="_blank">View Resume</a>
+              </div>
             </div>
-            <div class="resumediv" id="githubdiv">
-              <a class="resume" id="github" href="https://github.com/KDGehlot2003" target="_blank">GitHub </a>
-            </div>
-          </div>
           </div>
           <div id="profilediv">
             <img
               src="img/about-img.jpg"
-              width="400"
-              class="img-responsive"
+              width="500"  
+              class="img-responsive fade-transparent"
               id="profilepic"
-              alt=""
+              alt="Profile picture of Nur Muchson Rahwanda Seto"
               align="right"
               data-aos="fade-right"
               data-aos-delay="0"
@@ -94,6 +104,8 @@
       </div>
     </div>
     <!-- ./home -->
+
+
     
     <!-- skill -->
     <div class="section" id="skill">
@@ -134,32 +146,32 @@
                         </div>
                     </div>
                     <div class="back">
-                        <h2>Backend</h2>
+                        <h2>Design</h2>
                         <div class="box">
                             <div class="backSkill">
-                                <img src="img/icons/node_icon.png" alt="">
-                                Node.js
+                                <img src="img/icons/canva-icon-512x512-q41pwse8.png" alt="">
+                                Canva 
                             </div>
                             <div class="backSkill">
-                                <img src="img/icons/expressjs_logo_icon_169185.png" alt="">
-                                Express.js
+                                <img src="img/icons/adobe_ai.png" alt="">
+                                Adobe  Illustrator
                             </div>
                             <div class="backSkill">
-                                <img src="img/icons/mongodb_icon.png" alt="">
-                                MongoDB
+                                <img src="img/icons/photoshop.png" alt="">
+                                Photoshop
                             </div>
                             <div class="backSkill">
-                                <img src="img/icons/mysql_icon.png" alt="">
-                                MYSQL
+                                <img src="img/icons/figma.png" alt="">
+                                Figma 
                             </div>
                             <div class="backSkill">
-                                <img src="img/icons/python_icon.png" alt="">
-                                Python
+                                <img src="img/icons/sketch.png" alt="">
+                                Sketch
                             </div>
                         </div>
                     </div>
                     <div class="tools">
-                        <h2>Tools & Services</h2>
+                        <h2>Tools</h2>
                         <div class="box">
                             <div class="toolsSkill">
                                 <img src="img/icons/git_icon.png" alt="">
@@ -177,18 +189,6 @@
                                     <img src="img/icons/docker.png" alt="">
                                     Docker
                                 </div>
-                            <div class="toolsSkill">
-                                <img src="img/icons/jupiter-notebook.png" alt="">
-                                Jupyter Notebook
-                            </div>
-                            <div class="toolsSkill">
-                                <img src="img/icons/postman_icon.png" alt="">
-                                Postman
-                            </div>
-                            <div class="toolsSkill">
-                                <img src="img/icons/canva-icon-512x512-q41pwse8.png" alt="">
-                                Canva
-                            </div>
                         </div>
                     </div>
                     <!-- <div class="datasci">
@@ -235,15 +235,14 @@
             <li class="timeline-event" data-aos="fade-up">
               <label class="timeline-event-icon"></label>
               <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail">April 2023 - Jun 2023</p>
-                <h3>Sintex Industries Limited</h3>
-                <h4>Automation and Software Development Internship</h4>
+                <p class="timeline-event-thumbnail">November 2023 - July 2024</p>
+                <h3>Indofitness Familly</h3>
+                <h4>IT Support</h4>
                 <p>
-                  • Gained comprehensive insights into industry operations through active learning and exploration.
+                  • Support the maintenance and troubleshooting Website, LAN and wireless networks.
                 <br>
-                • Contributed to the successful execution of two distinct projects throughout the duration of my internship. <br>
-• Utilized <strong>EasyOCR</strong> and <strong>Robot Framework</strong> for <strong>SAP</strong> invoice automation, and <strong>RASA</strong> to create a user-friendly leave management chatbot.
-</p>
+                • Create intuitive and aesthetically pleasing user interfaces for landing pages.. <br>
+                • Document solutions and workarounds for common issues to improve efficiency.
 
               </div>
             </li>
@@ -251,12 +250,12 @@
               <label class="timeline-event-icon"></label>
               <div class="timeline-event-copy">
                 <p class="timeline-event-thumbnail">
-                  Jul 2023
+                  November 2023
                 </p>
-                <h3>Hackathon</h3>
-                <h4>Parul Lets Hack Hackathon</h4>
+                <h3>Surya Sakti Ars</h3>
+                <h4>Design </h4>
                 <p>
-                  • Created a TensorFlow-powered tool to diagnose tuberculosis from X-rays.
+                  • Architectural design, specializing in creating innovative and functional RISHA home designs that prioritize sustainability and modern aesthetics..
                 </p>
               </div>
             </li>
@@ -264,11 +263,11 @@
               <label class="timeline-event-icon"></label>
               <div class="timeline-event-copy">
                 <p class="timeline-event-thumbnail">Mar 2024</p>
-                <h3>Hackathon</h3>
-                <h4>PU CODE 36-Hour Hackathon</h4>
+                <h3>Basras Studio</h3>
+                <h4>Design</h4>
                 <p>
-                  • Demonstrated resilience and creativity through sustained focus and teamwork in a high-pressure, time-constrained environment. <br>
-• Created a tool to help farmers detect crop diseases and analyze soil, using <strong>React</strong> and <strong>FastAPI</strong>.
+                  • Creating visually captivating landing pages that effectively drive user engagement and conversion rates.. <br>
+                  • Video editing, adept at transforming raw footage into polished content that aligns with project objectives.
                 </p>
               </div>
             </li>
@@ -301,7 +300,7 @@
                     <li>
                       <a href="" data-filter=".web-Dev">Web Development</a>
                     </li>
-                    <li><a href="" data-filter=".Ml">ML & DL</a></li>
+                    <li><a href="" data-filter=".Design">Design</a></li>
                     <!-- <li><a href="" data-filter=".graphics">Graphics</a></li> -->
                     <!-- <li><a href="" data-filter=".ads">Advertising</a></li> -->
                     <!-- <li><a href="" data-filter=".fashion">Fashion</a></li> -->
@@ -317,19 +316,19 @@
               >
                 <!-- single work -->
                 <div class="col-md-4 col-sm-6 web-Dev">
-                  <a id="demo01" href="https://kdgehlot2003.github.io/Code-Blog/" 
+                  <a id="demo01" href="https://www.rickydarmawan.com/" 
                   target="_blank"
                   class="portfolio_item">
                     <img
-                      src="img/portfolio/codeblog.jpeg"
+                      src="img/indofitnessfamily.png"
                       alt="image"
                       class="img-responsive"
                     />
                     <div class="portfolio_item_hover">
                       <div class="portfolio-border clearfix">
                         <div class="item_info">
-                          <span>Code Blog</span>
-                          <em>HTML | CSS | JavaScript | React.js</em>
+                          <span>Indofitness Family </span>
+                          <em>HTML | CSS | JavaScript </em>
                         </div>
                       </div>
                     </div>
@@ -338,19 +337,19 @@
                 <!-- end single work -->
 
                 <!-- single work -->
-                <div class="col-md-4 col-sm-6 ads web-Dev Ml">
-                  <a id="demo02" href="https://visinory.netlify.app/" 
+                <div class="col-md-4 col-sm-6 ads web-Dev">
+                  <a id="demo02" href="https://suryasaktiars.com" 
                   target="_blank"
                   class="portfolio_item">
                     <img
-                      src="img/portfolio/visinory.jpeg"
+                      src="img/suryasaktiars.png"
                       alt="image"
                       class="img-responsive"
                     />
                     <div class="portfolio_item_hover">
                       <div class="portfolio-border clearfix">
                         <div class="item_info">
-                          <span>Visinory</span> <em>Python | TensorFlow | Fast-API | React.js | Bootstrap</em>
+                          <span>Surya Sakti Ars</span> <em>Wordpress | Elementor </em>
                         </div>
                       </div>
                     </div>
@@ -359,43 +358,19 @@
                 <!-- end single work -->
 
                 <!-- single work -->
-                <div class="col-md-4 col-sm-6 web-Dev Ml">
-                  <a id="demo03" href="https://tbvision.netlify.app/" 
+                <div class="col-md-4 col-sm-6 Design">
+                  <a id="demo05" href="bit.ly/blissee" 
                   target="_blank"
                   class="portfolio_item">
                     <img
-                      src="img/portfolio/tbvision.png"
+                      src="img/bumiprianganindahh.png"
                       alt="image"
                       class="img-responsive"
                     />
                     <div class="portfolio_item_hover">
                       <div class="portfolio-border clearfix">
                         <div class="item_info">
-                          <span>TB Vision</span>
-                          <em>Python | PyTorch | HTML | CSS | JavaScript | RASA</em>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- end single work -->
-
-
-
-                <!-- single work -->
-                <div class="col-md-4 col-sm-6 ads">
-                  <a id="demo05" href="https://github.com/KDGehlot2003/ChatBot" 
-                  target="_blank"
-                  class="portfolio_item">
-                    <img
-                      src="img/portfolio/chatbot.jpeg"
-                      alt="image"
-                      class="img-responsive"
-                    />
-                    <div class="portfolio_item_hover">
-                      <div class="portfolio-border clearfix">
-                        <div class="item_info">
-                          <span>ChatBot For Leave</span> <em>Python | MYSQL | RASA | Flask | HTML | CSS | JavaScript</em>
+                          <span>Bumi Piangan Indah</span> <em>Adobe Illustrator | Canva</em>
                         </div>
                       </div>
                     </div>
@@ -405,20 +380,19 @@
 
 
                 <!-- single work -->
-                <div class="col-md-4 col-sm-6 ads">
-                  <a id="demo04" href="https://drive.google.com/file/d/1xZsTfyW5NOGb2O09GdGA7Xwvo0nV3rbu/view?usp=drive_link" 
+                <div class="col-md-4 col-sm-6 Design">
+                  <a id="demo04" href="bit.ly/blissee" 
                   target="_blank"
                   class="portfolio_item">
                     <img
-                      src="img/portfolio/Invoic_praking_sap.jpeg"
+                      src="img/18inchinteriorbanner.png"
                       alt="image"
                       class="img-responsive"
                     /> 
                     <div class="portfolio_item_hover">
                       <div class="portfolio-border clearfix">
                         <div class="item_info">
-                          <span>Invoice Parking In SAP Automation</span> <em>Python 
-                            | EasyOCR | Streamlit | SAP | RIDE Robot Framework</em>
+                          <span>18inch Interior</span> <em>Adobe Illustrator | Canva</em>
                         </div>
                       </div>
                     </div>
@@ -533,11 +507,11 @@
                 <li class="timeline-event" data-aos="fade-up">
                   <label class="timeline-event-icon"></label>
                   <div class="timeline-event-copy">
-                    <p class="timeline-event-thumbnail">Sept 2021  - Jun 2025</p>
-                    <h3>Parul University</h3>
-                    <h4>B.Tech CSE Specialized In Artificial Intelligence</h4>
+                    <p class="timeline-event-thumbnail">Sept 2023  - Present</p>
+                    <h3>Open University</h3>
+                    <h4>Information System</h4>
                     <p>
-                      <strong>CGPA:</strong> 7.57 <br>
+                      <strong>CGPA:</strong> 3.9 <br>
                     </p>
     
                   </div>
@@ -546,10 +520,10 @@
                   <label class="timeline-event-icon"></label>
                   <div class="timeline-event-copy">
                     <p class="timeline-event-thumbnail">
-                      Jun 2019 - Mar 2021
+                      Jun 2004 - Mar 2007
                     </p>
-                    <h3>Asia English School</h3>
-                    <h4>Higher Secondary School Certificate</h4>
+                    <h3>Mejayan High School </h3>
+                    <h4>Social Science</h4>
                     <p>
                     </p>
                   </div>
@@ -583,28 +557,26 @@
         </div>
         <div class="col-md-4" data-aos="fade-up">
           <h3>Phone Number</h3>
-          <p>+91 91067 14830</p>
+          <p>+62 82117652129</p>
           <!-- <h3>Mobile Numberr</h3> -->
           <!-- <p>+20 5555 569 42</p> -->
           <h3>Email</h3>
-          <p>kdgehlot2003@gmail.com</p>
+          <p>nurr.muchsn@gmail.com</p>
 
           <h3>Social Network</h3>
 
           <ul class="social">
 
             <li>
-              <a href="https://www.linkedin.com/in/kshitijgehlot/" target="_blank"><i class="ion-social-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/rd-seto/" target="_blank"><i class="ion-social-linkedin"></i></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/kshitijgehlot10/" target="_blank"><i class="ion-social-instagram"></i></a>
+              <a href="https://www.instagram.com/rd_seto/" target="_blank"><i class="ion-social-instagram"></i></a>
             </li>
             <li>
-              <a href="https://github.com/KDGehlot2003"><i class="ion-social-github" id="github-icon-footer"></i></a>
+              <a href="https://github.com/rd-seto"><i class="ion-social-github" id="github-icon-footer"></i></a>
             </li>
-            <li>
-              <a href="https://leetcode.com/u/kdgehlot2003/"><i class="ion-code" id="github-icon-footer"></i></a>
-            </li>
+          
             <!-- <li> 
               <a href="#"><i class="">
                 <img src="/img/icons/leetcode.svg" id="leetcode-icon-footer" alt="">
@@ -696,7 +668,7 @@
                     return;
                 }
 
-                fetch("https://getform.io/f/nbvvkjrb", {
+                fetch("https://getform.io/f/bqonzogb", {
                     method: "POST",
                     body: formData,
                     headers: {

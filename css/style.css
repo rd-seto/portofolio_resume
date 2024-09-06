@@ -1,7 +1,7 @@
 /*
 * Resume template
-* Created by : Ahmed Essa
-* website : www.ahmedessa.net
+* Created by : rd seto
+* website : www.rd-seto.net
 */
 
 
@@ -238,7 +238,7 @@ nav ul {
     padding: 20px;
     margin-bottom: 0;
     -webkit-transition: all .5s;
-    transition: all .5s;
+    transition: all .s;
 }
 
 nav li {
@@ -264,7 +264,7 @@ nav li a {
 }
 
 a:focus {
-    color: #444;
+    color: #983737;
     text-decoration: none;
 }
 
@@ -277,15 +277,102 @@ a.active {
     color: #425BB5;
 }
 
-
 /* home section
 ==================================================*/
 
 #home {
-    background: url(../img/home-bg-2.jpg);
-    background-size: auto;
-    /* background-size: cover; */
-    height: 100vh;
+    position: relative;
+    background: #ffffff; /* Solid white background */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensure background does not scroll */
+}
+
+/* Absolute container for background shapes */
+.absolute {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Shape styles */
+.bg-shape {
+    position: absolute;
+    border-radius: 50%; /* Fully rounded shape */
+    animation: bounce 10s infinite;
+}
+
+/* Shape sizes and animations */
+.bg-teal {
+    width: 400px;
+    height: 400px;
+    background-color: #00000055;
+    animation: one 10s infinite;
+}
+
+.bg-primary {
+    width: 300px;
+    height: 300px;
+    background-color: #425BB5;
+    animation: two 10s infinite;
+}
+
+.bg-purple {
+    width: 400px;
+    height: 400px;
+    background-color: #061792;
+    animation: three 10s infinite;
+}
+
+/* Bounce effect animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+/* Individual shape animations */
+@keyframes one {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-100px, 70px); }
+    50% { transform: translate(20px, 150px); }
+    75% { transform: translate(50px, 100px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes two {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(50px, 10px); }
+    50% { transform: translate(100px, 50px); }
+    75% { transform: translate(50px, 100px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes three {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-50px, -50px); }
+    50% { transform: translate(50px, 50px); }
+    75% { transform: translate(-50px, 100px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Additional styles */
+.opacity-25 {
+    opacity: 0.5;
+}
+
+.bg-blur {
+    filter: blur(120px);
+}
+
+/* Ensure content is above the background */
+.container {
+    position: relative;
+    z-index: 1;
 }
 
 .table-cell {
@@ -295,9 +382,8 @@ a.active {
 
 .disply-table {
     display: table;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
 }
-
 
 /* about section
 ==================================================*/
@@ -761,23 +847,36 @@ fieldset {
     margin-top: 150px;
     margin-left: 500px;
 }
-.resumediv{ 
+.resumediv {
     margin-top: 25px;
     width: 140px;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 25px;
     padding-top: 6px;
     padding-bottom: 30px;
     text-align: center;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
-    transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    border: 1px solid black;
+    border: 0px solid transparent; /* Use transparent border to avoid shifting */
     outline: none;
-  }
+    overflow: hidden; /* Ensure that the animation stays within the element */
+    animation: borderGlow 5s linear infinite; /* Continuous border glow animation */
+}
+
+@keyframes borderGlow {
+    0% {
+        box-shadow: 0 0 10px #636363cc; /* Initial glow effect */
+    }
+    50% {
+        box-shadow: 0 0 10px #adacaccc; /* Stronger glow effect */
+    }
+    100% {
+        box-shadow: 0 0 10px #808080cc; /* Return to initial glow effect */
+    }
+}
 
 
 /* Responsive media queries
@@ -853,7 +952,7 @@ fieldset {
 }
 
   .resumediv a{
-    color: black;
+    color: #3b3c3d94;
     text-decoration: none;
   }
 
@@ -867,10 +966,15 @@ fieldset {
   right: 0;
   z-index: -1;
   background-color: #425BB5;
-  border-radius: 4px;
-  transition: all 0.4s ease;
+  border-radius: 0px;
+  transition: all 1.1s ease;
   color: #fff;
 }
+
+.resumediv:hover:after {
+    width: 80%; /* Animation for width on hover */
+    box-shadow: 0 0 20px 5px #425bb5cc; /* Stronger glow on hover */
+  }
 
 .resumediv:hover a{
   color: #fff;
@@ -1039,7 +1143,63 @@ fieldset {
 
 .Skills .container-skill .mainSkill .front .frontSkill:hover, .back .backSkill:hover, .datasci .datasciSkill:hover, .tools .toolsSkill:hover{
     transform: translateY(-7px);
-    transition: all 0.3s ease;
+    transition: all 0.8s ease;
 }
 
+.table-cell h4 {
+    transition: transform 0.3s ease; /* add transition effect */
+  }
+  
+  .table-cell h4:hover {
+    transform: translateX(-5px); /* move 5px to the left on hover */
+  }
 
+  #profilepic {
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  #profilepic:hover {
+    transform: translateX(10px); /* Move to the right by 10px on hover */
+  }
+  
+  #job-title {
+    color: rgb(114, 114, 114); /* Initial text color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  #job-title:hover {
+    color: #bfbaba; /* Color change on hover */
+  }
+  
+  header nav ul li a {
+    color: #333; /* Example color, match this with your actual text color */
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  header nav ul li a:hover {
+    transform: translateY(8px); /* Adjust the value to control how much the text drops */
+  }
+  
+  .typewriter {
+    overflow: hidden; /* hide the text initially */
+    white-space: nowrap; /* keep the text on a single line */
+    border-right: 2px solid #000000; /* add a blinking cursor effect */
+    animation: blink 0.5s infinite; /* blink the cursor */
+  }
+  
+  @keyframes blink {
+    0% {
+      border-right-color: #000;
+    }
+    50% {
+      border-right-color: transparent;
+    }
+    100% {
+      border-right-color: #000;
+    }
+  }
+
+
+ 
